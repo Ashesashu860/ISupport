@@ -1,0 +1,543 @@
+/* Empty. Add your own CSS if you like */
+.header-bar.bar-positive {
+	background-color: #027cd5;
+	color: #fff;
+}
+
+img#logo {
+	display: inline-block;
+	max-width: 100%;
+	max-height: 126px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+img#logo + h1 {
+	display: inline-block;
+	margin: 10px 0 0 5px;
+	position: initial;
+	white-space: normal;
+	text-overflow: initial;
+	line-height: 1;
+	vertical-align: middle;
+	margin-top: 34px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	height: auto;
+}
+
+.header-logo {
+	height: auto;
+	padding: 0;
+	border-bottom: 1px solid #ccc !important;
+}
+
+.header-logo+ion-content {
+	top: 126px;
+	font-weight: 300;
+}
+
+.about-content {
+	background-color: #e5e5e5;
+}
+
+.about-content .card,
+.login-modal .card {
+	box-shadow: 0 1px 2px #aaa;
+	background-color: #fff;
+	border-radius: 3px;
+	font-weight: 300;
+}
+
+.about-content .item h2 {
+	text-transform: capitalize;
+	font-weight: 300;
+	white-space: initial;
+}
+
+.item p,
+.item li {
+	font-size: 14px;
+	line-height: 20px;	/* font-weight: 300; */
+}
+
+ion-side-menu .item {
+	border: none;
+}
+
+ion-side-menu .item.active a.item-content {
+	background-color: #eee;
+	color: #333;
+	font-weight: 400;
+}
+
+.accor-content {
+	margin: 8px 0 10px;
+}
+
+.card footer {
+	padding: 10px 0 0 10px;
+	border-top: 1px solid #f0f0f0;
+	font-size: 14px;
+	color: #0c63ee;
+	color: #027cd5;
+	white-space: normal
+}
+
+#connect-list .card footer {
+	font-size: 14px;
+	color: #666;
+	padding-left: 0;
+}
+
+footer span {
+	margin-left: 10px;
+}
+
+.about-content .fade {
+	position: relative;
+	max-height: 80px;
+	overflow: hidden;
+}
+
+.about-content .fade:after {
+	content: "";
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 90%;
+	height: 20px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
+}
+
+.about-content .accor-content p {
+	overflow: hidden;
+	text-overflow: initial;
+	white-space: initial;
+}
+
+img#hand-logo {
+	height: 32px;
+	padding-left: 16px;
+	padding-right: 5px;
+	box-sizing: border-box;
+}
+
+.main-subheader {
+	background-color: #006CB4;
+	margin-top: 0px;
+	border: none;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px;
+}
+
+.main-subheader h2 {
+	font-size: 16px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	font-weight: 300;
+}
+
+.social-btns {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 15;
+	left: 0;
+}
+
+.social-btns a i {
+	color: #006CB4;
+}
+
+.landing-page.pane-top {
+	height: 55%;
+	position: relative;
+}
+
+.landing-page.pane-top .banner-1 {
+	height: 60%;
+	background-image: url('../img/banner-1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 95%;
+}
+
+.landing-page.pane-top .banner-2 {
+	height: 40%;
+	background-image: url('../img/banner-2.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 90%;
+}
+
+.landing-page.pane-bottom {
+	top: 55%;
+	height: 45%;
+	background-image: url('../img/banner-3.png');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: auto 100%;
+}
+
+.landing-page >.item {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0 16px;
+	text-align: center;
+}
+
+.landing-page >.item > .button {
+	text-transform: uppercase;
+	min-height: auto;
+	margin: 0;
+	font-weight: 400;
+	background-color: #027cd5;
+	padding: 10px;
+	line-height: 1;
+}
+
+.login-modal .card {
+	margin: 60px 16px 20px;
+	padding: 20px 0 0 0;
+	background-color: rgba(250, 250, 250, 0.9);
+}
+
+.login-modal-header {
+	color: #333;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	line-height: 40px;
+	font-weight: 300;
+}
+
+.close-btn {
+	text-align: center;
+}
+
+.close-btn a {
+	font-size: 15px;
+	color: #027cd5;
+}
+
+.login-modal.modal {
+	background-color: rgba(0, 0, 0, 0.75);
+	font-weight: 300;
+}
+
+.login-modal .card .item-input {
+	margin: 0 16px;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	border-top-width: 0;
+}
+
+.login-modal .button-bar {
+	border: none;
+	background-color: transparent;
+	margin-top: 20px;
+	box-shadow: none;
+}
+
+.login-modal .button-bar > a.button {
+	background-color: transparent;
+	border-color: #d0d0d0;
+	box-shadow: none;
+	border-radius: 0;
+	border-bottom: none;
+	color: #027cd5;
+	text-transform: uppercase;
+}
+
+.login-modal .card .item-input:last-child {
+	border: none
+}
+
+.login-modal .card .item-input:last-child {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.read-more-modal h2,
+.read-more-modal p {
+	font-weight: 300;
+}
+
+.read-more-modal {
+	background-color: #fff;
+	padding: 24px 10px;
+}
+
+.read-more-modal .item {
+	border: none;
+}
+
+.read-more-modal .close-icon {
+	margin-bottom: 5px;
+	padding: 0 16px;
+	font-weight: 300;
+	text-align: left;
+	font-size: 14px;
+	color: #0c63ee;
+	color: #027cd5;
+	vertical-align: middle;
+	line-height: 1;
+	display: inline-block;
+}
+
+.close-icon span {
+	margin-left: 7px;
+	vertical-align: middle;
+}
+
+.close-icon i {
+	vertical-align: middle;
+}
+
+.read-more-modal p {
+	white-space: initial;
+	word-wrap: break-word;
+	text-overflow: initial;
+	margin-top: 10px;
+}
+
+.read-more-modal footer {
+	display: none;
+}
+
+b,
+strong {
+	font-weight: 400;
+}
+
+.item {
+	font-weight: 300;
+}
+
+.accor-content li {
+	white-space: initial;
+	list-style: initial;
+	margin-left: 20px;
+}
+
+.item.expandable .title i.ion-android-remove {
+	display: none;
+}
+
+.item.expandable.expanded .title i.ion-android-add {
+	display: none;
+}
+
+.item.expandable.expanded .title i.ion-android-remove {
+	display: inline-block;
+	height: 100%;
+}
+
+.item.expandable.expanded .content {
+	display: block;
+	margin: 16px 0 0;
+	padding-left: 24px;
+}
+
+#connect-list .item.expandable.expanded .content {
+	padding-left: 0;
+}
+
+.item.expandable .content {
+	display: none;	/* border-top: 1px solid #f0f0f0; */
+}
+
+.item.expandable .title i {
+	margin-right: 10px;
+	color: #027cd5;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.expandable .title h2 {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 94%;
+}
+
+.item h2 i {
+}
+
+/*dark menu theme as asked by Juhi*/
+.item a i.ion-chevron-right {
+	display: none;
+}
+
+.header-logo span {
+	display: none;
+}
+
+#side-menu-dark .header-logo span {
+	display: inline;
+	padding-top: 16px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+	padding-left: 16px;
+}
+
+ion-side-menu#side-menu-dark {
+	padding: 16px 16px 0;
+}
+
+#side-menu-dark .bar-header {
+	position: relative;
+	width: auto;
+	background-color: #2b2b2b;
+	border-radius: 4px;
+	border: 1px solid #2b2b2b !important;
+}
+
+#side-menu-dark img#logo {
+	width: 50%;
+	height: 120px;
+	border-radius: 4px;
+}
+
+#side-menu-dark .scroll-content {
+	position: relative;
+	top: 16px;
+}
+
+#side-menu-dark .item {
+	background-color: #343434;
+	border-radius: 4px;
+	border-top: 1px solid #464646;
+	border-bottom: 1px solid #2b2b2b;
+	margin: 0;
+}
+
+#side-menu-dark a.item-content {
+	background-color: #343434;
+	border-radius: 4px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 10px;
+}
+
+#side-menu-dark i.ion-chevron-right {
+	display: inline;
+	float: right;
+	border-radius: 50%;
+	background-color: #222222;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+div.toggle {
+	position: absolute;
+	bottom: 100px;
+	z-index: 99999;
+}
+
+/* theme2  */
+ion-side-menu#theme2 {
+	background-color: #2d2d2d;
+}
+
+#theme2 a.item-content {
+	background-color: #2d2d2d;
+	color: #e0e0e0;
+	padding: 16px;
+}
+
+#theme2 .active a.item-content {
+	background-color: #272727;
+	color: #f0f0f0;
+}
+
+#theme2 .item {
+	margin: 0;
+}
+
+#theme2 .item.active {
+	border-bottom: 1px solid #363636;
+	border-top: 1px solid #363636;
+}
+
+#theme2 .active a.item-content i {
+	display: inline;
+	float: right;
+	font-size: 13px;
+}
+
+#theme2 .social-btns a i {
+	color: #2d2d2d;
+}
+
+button#rounded-btn {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 32px;
+}
+
+.italic {
+	font-style: italic;
+	font-weight: 400;
+}
+
+.item p a,
+.blue-link {
+	color: #027cd5;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#connect-list .item.expandable {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.item.expandable.expanded {
+}
+
+#connect-list .item.expandable .title {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.footer {
+	font-size: 14px;
+	padding: 20px 0;
+	line-height: 24px;
+	font-weight: 300;
+	background-color: #f0f0f0;
+	text-align: center;
+}
+
+.footer a.blue-link {
+	font-style: normal;
+}
+
+#gmap > .scroll {
+	height: 100%;
+}
+
+#gmap iframe {
+	height: 100%;
+	width: 100%;
+}
+.article img{
+	width: 100%;
+}

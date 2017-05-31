@@ -1,0 +1,225 @@
+<ion-view view-title="I Support Foundation">
+<ion-content class="about-content">
+<div class="main-subheader ">
+	<h2>Frequently Asked Questions</h2>
+</div>
+<ion-list id="faq-list" ng-init="activeItem = 0">
+<div class="item expandable" ng-class="{expanded: activeItem == 1}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 1 ?0:1">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		What is Autistic Disorder?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>Autistic disorder, commonly referred to as autism, is the most prevalent ASD and severely impairs a child’s social interaction and communication abilities.</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 2}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 2 ?0:2">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		What are Autism Spectrum Disorders?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p><a ng-click="goToLink('https://bbrfoundation.org/autism')">Autism spectrum disorders</a> (ASDs) represent a range of neurological disorders that are characterized by restricted patterns of behavior and impairments in social communication and interactions. These disorders share common origins and features, but are classified as spectrum disorders because symptoms and severity vary among individuals.</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 3}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 3 ?0:3">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		Who Develops Autism Spectrum Disorders (ASDs)?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>ASDs are usually evident by the age of 3, though diagnosis may be made as early as 12 to 18 months, and as late as 4 to 6 years (or later). According to the Center for Disease Control (CDC), about <a ng-click="goToLink('www.cdc.gov/ncbddd/autism/data.html')">1 in 88 children have an autism spectrum disorder</a>. ASDs are three to four times more common in boys than in girls. However, girls with these disorders tend to have more severe symptoms and lower intelligence. Some children will need ongoing supervision, while others, with the right support, may pursue higher education and fulfilling jobs. These disorders affect people of all racial, ethnic and socioeconomic groups.</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 4}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 4 ?0:4">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		What are the symptoms of Autism Spectrum Disorders?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>Symptoms/behaviors of ASDs can range from mild to severe, and may seem to appear gradually or suddenly. Atypical development may be observed from birth, or more commonly, become noticeable during the 12- to 36-month period.symptoms include:</p>
+		<ul>
+			<li><b>Social Deficits </b>- Children with autism have difficulty in social interactions. They may avoid eye contact and interactions with people and resist or passively accept attention. They are often unable to read social cues or exhibit emotional reciprocity. Thus, they are unable to predict or understand other peoples’ behavior. They may also have difficulty controlling emotion, may be disruptive or aggressive at times, or may lose control, especially when frustrated or presented with a new situation or environment. Head-banging, hair-pulling and arm-biting may occur. Autistic children preferred to be left alone, play by themselves and do not have any kind of pretend or imaginative play.
+			</li>
+			<li><b>Communication Difficulties</b> - Communication skills are affected in children with autism, but difficulties vary. They usually have delayed speech and language skills. Autistic children can be verbal or non-verbal. Some children may have good basic language skills, but exhibit difficulty initiating or sustaining conversations, such as not giving others the opportunity to respond. Some children may use language in unusual ways, such as repeating a phrase, or parroting what they hear (echolalia). Body language is also often hard to read in children with autism. Facial expressions, tone of voice and gestures often do not match verbal content and emotions. They have difficulty expressing what they want or need. They may also appear deaf, not responding to their names or attempts at conversation and being in their own world. Skills such as greeting, requesting and turn taking are also not age appropriate.
+			</li>
+			<li><b>Repetitive Behaviors</b> - Patterns of behavior, interests and activities may be restricted, repetitive or stereotyped. For example, a child may spend long periods of time arranging specific toys in a particular manner, or playing with certain parts of the toy in specific rather than playing with the toys as a whole. Odd repetitive motions, either extreme or subtle, such as hand-flapping, freezing, rocking back and forth or walking on their toes may also occur. Often, people with autism demand consistency in their environment. A minor change in routine may be tremendously upsetting.
+			</li>
+			<li><b>Sensory Difficulties</b> - In children with autism, the brain seems unable to balance the senses appropriately. Many autistic children are highly attuned or even painfully sensitive to certain sounds, textures, tastes or smells. Some seem oblivious to cold or pain, but react hysterically to things that wouldn't bother other children. In some people, the senses are even scrambled. For example, touching a certain texture may induce a gagging response. Many children with autism have unusual responses to sensory input. They have difficulty processing and integrating sensory information, or stimuli, such as sights, sounds smells, tastes and/or movement. They may experience seemingly ordinary stimuli as painful, unpleasant or confusing. Some of those with autism are hypersensitive to sounds or touch, a condition also known as sensory defensiveness. Others are under-responsive, or hyposensitive. An example of hypersensitivity would be the inability to tolerate wearing clothing, being touched or being in a room with normal lighting. Hyposensitivity can include failure to respond when one’s name is called. Many sensory processing problems can be addressed with occupational therapy and/or sensory integration therapy.
+			</li>
+			<li><b>Unusual Abilities</b> - In rare cases, some children with ASDs display remarkable abilities, such as drawing detailed, realistic pictures at a young age or playing an instrument without training. Some can memorize difficult lists of items, such as statistics or names (this is called islets of intelligence or savant skills).
+			</li>
+			<li><b>Genetic Disorders</b> - Some children with autism have an identifiable genetic condition that affects brain development. These genetic disorders include Fragile X syndrome, Angelman syndrome, tuberous sclerosis and chromosome 15 duplication syndrome and other single-gene and chromosomal disorders. Some of these syndromes have characteristic features or family histories, the presence of which may prompt your doctor to refer to a geneticist or neurologist for further testing. The results can help guide treatment, awareness of associated medical issues and life planning.
+			</li>
+			<li><b>Gastrointestinal (GI) Disorders</b>- GI distress is common among persons with autism, and affects up to 85 percent of children with ASD. These conditions range in severity from a tendency for chronic constipation or diarrhea to inflammatory bowel disease. Pain caused by GI issues can prompt behavioral changes such as increased self soothing (rocking, head banging, etc) or outbursts of aggression or self-injury. Conversely, appropriate treatment can improve behavior and quality of life.
+			</li>
+			<li><b>Seizure Disorders </b>- Seizure disorders, including epilepsy, occur in as many as 39 percent of those with autism. It is more common in people with autism who also have intellectual disability than those without. Can be diagnosed with electroencephalogram (EEG) testing.
+			</li>
+			<li><b>Pica</b>Pica is a tendency to eat things that are not food. Eating non-food items is a normal part of development between the ages of 18 and 24 months. However, some children and adults with autism and other developmental disabilities continue to eat items such as dirt, clay, chalk or paint chips.
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 5}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 5 ?0:5">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		How Are ASDs Diagnosed?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>To date, no biological diagnostic tests exist that detect autism. But scientists are hopeful that advanced imaging techniques and differences in blood levels of proteins in autistic versus normal children may have implications for diagnosis. Already, improved diagnostic procedures have allowed clinicians to diagnose children at a younger age.</p>
+		<p>Formal diagnosis involves parental input and structured and systematic screening instruments, such as the Modified Checklist for Autism in Toddlers (M-CHAT) and the Autism Behavioral Checklist (ABC) for older children. The Childhood Autism Rating Scale (CARS), Diagnostic Statistical Manual -V(DSM-V) and the Autism Diagnostic Inventory-Revised (ADI-R) are used.. These tools measure the prevalence of symptoms. Symptoms may be present from birth, or may occur after months of normal development. However, no two children with these disorders behave the same way. Children as young as 18 months may be diagnosed, but have different clinical features than an older child with autism.</p>
+		<p>
+			<b>Between 18 months and 36 months</b>, symptoms may include:
+		</p>
+		<ul>
+			<li>Solo play/isolated play and lack of pretend play</li>
+			<li>Delayed speech and language- limited vocabulary- 1 word utterances</li>
+			<li>Lack of pointing using index finger to express need or demonstrate interest</li>
+			<li>Reduced joint attention</li>
+			<li>Less frequent demonstration of repetitive, stereotypic behaviors</li>
+		</ul>
+		<p>
+			<b>Between 2 years and 3 years of age</b>, symptoms may include:
+		</p>
+		<ul>
+			<li>Delayed speech and language- 2-3 word utterances not achieved.</li>
+			<li>Socialization deficits with caregivers</li>
+			<li>Perceptual sensitivity</li>
+			<li>Other behavioral problems</li>
+		</ul>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 6}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 6 ?0:6">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		How are ASDs treated?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>There is no one treatment for ASDs; however, it is widely accepted that the earliest interventions allow the best outcomes. Treatments generally address both cognitive and behavioral functioning. They may include a combination of medications (for challenging behaviors), behavioral therapy, psycho-education, family support groups, educational interventions, speech and language therapy, occupational therapy and specialized training to develop and improve acquisition of necessary skills.</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 7}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 7 ?0:7">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		What treatments, therapies, or interventions are available for Autistic children and adults
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>There is a list of common treatments, therapies, and interventions people often seek or use. Here is a brief and certainly not exhaustive or complete listing:</p>
+		<ul>
+			<li>Family members/ care takers</li>
+			<li>Psychologist</li>
+			<li>Speech pathology/therapy</li>
+			<li>Occupational therapy</li>
+			<li>Physical therapy</li>
+			<li>Audiologist</li>
+			<li>Special educators</li>
+			<li>Applied Behavioral Analysis (ABA)</li>
+			<li>Floor-time</li>
+			<li>Social skills classes</li>
+			<li>TEACCH- Treatment And Education Of Autistic And Related Communication Handicapped Children</li>
+			<li>Gluten-free/Casein-free diet</li>
+			<li>Medications (usually for co-occurring conditions- seizures, hyperactivity)</li>
+			<li>Mentoring</li>
+			<li>Daily Life therapy</li>
+			<li>Workshops</li>
+		</ul>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 8}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 8 ?0:8">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		How can I find the best treatments for my child?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>Research suggests that early intensive behavioral intervention, based on applied behavioral analysis, is effective at improving language, function and behavior in individuals with autism. Interventions focused on parent training and cognitive behavioral therapy can improve social skills, communication, language use and management of challenging behaviors</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 9}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 9 ?0:9">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		What is the prognosis for someone with an autism spectrum disorder?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>Each individual with an ASD diagnosis is different, but all have positive characteristics that can be used to advantage. For example, most people on the spectrum are typically very honest and they rarely show bias or prejudice. Some have an excellent memory for details and facts and may have original problem-solving strategies. Many are extremely hard-working, loyal, and dependable. While some individuals with ASDs will have a job and even graduate from college, others will need intensive life-time care. Services for adult individuals on the spectrum and their families, while not as widely available as they need to be, are growing in number. They include social coaching, job training, and accommodated living arrangements in regular communities.</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 10}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 10 ?0:10">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		What kind of employment opportunities do Autistic people have?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>Commensurate with an individual's actual abilities and skills, it depends on the level of education the person has as well as the types of support needed during the hiring process or during employment, and whether those supports are available. Autistic people do well when working in a field related to an interest of theirs, not required to participate in a lot of inter-personal interactions, and when given specific, explicit goals or instructions. Autistic people have worked in offices, as professors, in the information technology field, as artists, as teachers, as engineers, as lawyers, as authors, as nonprofit managers, as cashiers, as accountants, as linguists.</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 11}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 11 ?0:11">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		Do Autistic people have empathy?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>Yes, they do. There was a misconception perpetuated for several decades -- and still fueled by some people today -- that Autistic people are not capable of empathy or empathizing with other people. One of the most common characteristics of Autism is a deficit in the ability to understand nonverbal forms of communication -- including tone or pitch of voice, word choice (such as idioms, colloquialisms, and metaphors), facial expressions, body language, and other subtle communications. Because of that, most Autistic people have a hard time accurately expressing their own thoughts, feelings, or opinions using nonverbal forms of communication. We also have trouble identifying the emotions of others based on subtext or body language.</p>
+		<p>Therefore, Autistic people not only have empathy, but in certain cases, had more empathy on average than non-Autistic people, we may not recognize when to express empathy for someone else, nor will we express it in a way that is expected in the rest of society.</p>
+		<p>Many Autistic people have a very strong sense of justice -- of right and wrong, and of fairness. Many Autistic people deeply experience sadness, tragedy, and anger at events recounted on the news -- famines, war, genocide, terrorist attacks, or other violent crimes.</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 12}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 12 ?0:12">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		What are the other ASDs (besides Autism and Asperger’s Syndrome)?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>Other disorders in the spectrum include pervasive developmental disorder not otherwise specified (PDDNOS) and two rarer disorders—childhood disintegrative disorder (CDD) and Rett’s syndrome. Children with PDDNOS demonstrate symptoms similar to autistic disorder, but do not meet all criteria for the disorder. Children with CDD, which affects more boys than girls, develop normally until approximately the first two years of life (average onset of symptoms is between 3 and 4 years) but they then regress in most areas and continue worsening. Specifically, they experience a pronounced loss in motor, language, social and intellectual skills.</p>
+	</div>
+</div>
+<div class="item expandable" ng-class="{expanded: activeItem == 13}">
+	<div class="title" expandable-dir ng-click="activeItem = activeItem == 13 ?0:13">
+		<i class="ion-android-add"></i>
+		<i class="ion-android-remove"></i>
+		<h2>
+		What is Rett Syndrome?
+		</h2>
+	</div>
+	<div class="content accor-content">
+		<p>Rett syndrome is a genetic disorder almost exclusively found in females. After early normal development, autistic symptoms begin to develop between 6 and 18 months, which typically include shunning social contact, talking cessation, unique motor behaviors, and a regression in skills. A single gene mutation has been identified as a cause of Rett syndrome, a defect in the protein binding gene (MeCP2) in the x chromosome. This finding that may enable researchers to develop improved diagnostics, earlier interventions and better treatments for the condition.</p>
+	</div>
+</div>
+</ion-list>
+</ion-content>
+</ion-view>

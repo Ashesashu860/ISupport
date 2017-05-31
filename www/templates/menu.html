@@ -1,0 +1,59 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-positive header-bar">
+			<ion-nav-back-button></ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<!-- <button class="button button-icon button-clear ion-navicon" id="" menu-toggle="left"></button> -->
+				<button class="button button-icon button-clear ion-navicon" id="rounded-btn" menu-toggle="left"></button>
+				<img id="hand-logo" ng-src="img/isf.png" alt="">
+			</ion-nav-buttons>
+		</ion-nav-bar>
+
+		<ion-nav-view></ion-nav-view>
+	</ion-side-menu-content>
+	<ion-side-menu side="left" id="side-menu-dark">
+	<!-- <ion-side-menu side="left" id=""> -->
+		<ion-header-bar class="bar-dark header-logo">
+			<img id="logo" ng-src="img/isf-1.jpg" alt="">
+			<span>MENU</span>
+		</ion-header-bar>
+		<ion-content>
+			<ion-list>
+				<ion-item menu-close  ui-sref="app.home">
+					Home <i class="ion-chevron-right"></i>
+				</ion-item>
+				<ion-item menu-close  ui-sref="app.menu.aboutISF">
+					About Us <i class="ion-chevron-right"></i>
+				</ion-item>
+				<ion-item menu-close  ui-sref="app.menu.aboutAutism">
+					About Autism <i class="ion-chevron-right"></i>
+				</ion-item>
+				<ion-item menu-close  ui-sref="app.menu.connect">
+					Bengaluru Connect <i class="ion-chevron-right"></i>
+				</ion-item>
+				<ion-item menu-close  ui-sref="app.menu.faq">
+					FAQs <i class="ion-chevron-right"></i>
+				</ion-item>
+				<ion-item menu-close  ui-sref="app.menu.gmap">
+					Resources Map <i class="ion-chevron-right"></i>
+				</ion-item>
+				<ion-item menu-close  ui-sref="app.menu.pics">
+					Pictures <i class="ion-chevron-right"></i>
+				</ion-item>
+				<ion-item menu-close  ui-sref="app.menu.contact">
+					Contact Us <i class="ion-chevron-right"></i>
+				</ion-item>
+			</ion-list>
+		</ion-content>
+
+		<div class="social-btns">
+				<div class="button-bar bar-light">
+					  <a ng-click="goToLink('https://twitter.com/isupportfoun')" class="button"><i class="icon ion-social-twitter"></i></a>
+					  <a ng-click="goToLink('http://www.facebook.com/isupportfoundn')" class="button"><i class="icon ion-social-facebook"></i></a>
+					  <a ng-click="goToLink('https://youtube.com/channel/UCeuomxLTrMfeWVvU6ZhvKmg')" class="button"><i class="icon ion-social-youtube"></i></a>
+					  <a ng-click="goToLink('http://www.isupportfoundation.in')" class="button"><i class="icon ion-link"></i></a>
+					  <a ng-click="goToLink('https://isupportfoundation.wordpress.com/')" class="button"><i class="icon ion-social-wordpress"></i></a>
+				</div>
+			</div>
+	</ion-side-menu>
+</ion-side-menus>

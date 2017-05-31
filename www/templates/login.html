@@ -1,0 +1,25 @@
+<ion-modal-view class="login-modal">
+
+  <div class="card">
+  <h1 class="login-modal-header">Login</h1>
+
+    <form ng-submit="doLogin()">
+
+        <label class="item item-input">
+          <input type="text" placeholder="Username" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Password" ng-model="loginData.password">
+        </label>
+
+  <div class="button-bar">
+  <a class="button" ng-click="doLogin()">Login</a>
+  <a class="button" ng-click="closeLogin()">Cancel</a>
+</div>
+
+    </form>
+  </div>
+  <div class="close-btn">
+	<a href="">Forgot Password?</a>sadasd
+  </div>
+</ion-modal-view>

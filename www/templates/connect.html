@@ -1,0 +1,919 @@
+<ion-view view-title="I Support Foundation">
+	<ion-content class="about-content" has-bouncing="true" delegate-handle="content-scroll">
+		<div class="main-subheader ">
+			<h2>Bengaluru Connect</h2>
+		</div>
+		<ion-list id="connect-list" ng-init="activeItem = 0">
+			<div class="item expandable" ng-class="{expanded: activeItem == 1}">
+				<div class="title" expandable-dir ng-click="activeItem = activeItem == 1 ?0:1; scrollClicked(1)">
+					<i class="ion-android-add"></i>
+					<i class="ion-android-remove"></i>
+					<h2>Special Schools</h2>
+				</div>
+				<div class="content accor-content">
+					<div class="card">
+						<div class="item">
+							<h2>Asha Kiran Special Needs School</h2>
+							<div class="accor-content">
+								<p>
+									15, 7th Main,2nd Stage, Indiranagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-65616160')">080-65616160</a>/ <a class="blue-link" ng-click="goToLink('tel://080-25258159')">25258159</a>/
+									<a class="blue-link" ng-click="goToLink('tel://9341262237')">9341262237</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:ashakiran@vsnl.net')">ashakiran@vsnl.net</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://www.ashakiran.net/')">http://www.ashakiran.net/</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Bubbles-Learning and Activity Centre
+							</h2>
+							<div class="accor-content">
+								<p>
+									Autism and other developmental delays 1279, KHB Colony Govindarajnagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-65335203')">080-65335203</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://bubbles-learning-centre-autism.blogspot.com/')">http://bubbles-learning-centre-autism.blogspot.com/</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Sambhav Foundation</h2>
+							<div class="accor-content">
+								<p>
+									335, 3rd Cross, 2nd Block, 3rd Stage, Basaveshwar Nagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-23391901')">080-23391901</a>/ <a class="blue-link" ng-click="goToLink('tel://9844211431')">9844211431</a>/
+									<a class="blue-link" ng-click="goToLink('tel://9972137819')">9972137819</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Asha Centre For Development Disabilities</h2>
+							<div class="accor-content">
+								<p>
+									C/o Lions Club of Sarakki1st Cross, 21st MainMarenahalli, JP Nagar 1stPhase,Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25599014')">080-25599014</a>/<a class="blue-link" ng-click="goToLink('tel://9243195154')">9243195154</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:apoorva@saiautismcentre.org')">apoorva@saiautismcentre.org</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://www.saiautismcenter.org/')">http://www.saiautismcenter.org/</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Deepika school</h2>
+							<div class="accor-content">
+								<p>
+									(Accepts High functioningchildren with Autism) No.9, 1st Cross,Shankarapuram, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-26619844')">080-26619844</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Rainbow Centre for Autism</h2>
+							<div class="accor-content">
+								<p>
+									31,5th Cross, 5th Main, Indiranagar 1st Stage, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25280935')">080-25280935</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://www.rainbowcentre.org.sg/')">http://www.rainbowcentre.org.sg/</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>The Com-DEALL Trust</h2>
+							<div class="accor-content">
+								<p>
+									No.47, Hutchins Road, 2nd CrossSarvajna Nagar (Cookes Town), Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25800826')">080-25800826</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:info@communicationdeall.org')">info@communicationdeall.org</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink(' http://www.communicationdeall.org/')"> http://www.communicationdeall.org/</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>The Creation Foundation Children With Autism</h2>
+							<div class="accor-content">
+								<p>
+									Ms.Neelam Calla39/3, Netaji road,Frazer Town, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25582143')">080-25582143</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>A.V.Education Society</h2>
+							<div class="accor-content">
+								<p>
+									13, 17th Cross,20th Main,5th Phase,JPNagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-26590952')">080-26590952</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>The Brigade School</h2>
+							<div class="accor-content">
+								<p>
+									J.P. Nagar Campus, Brigade Millennium,7th Phase, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-41301390')">080-41301390</a>/<a class="blue-link" ng-click="goToLink('tel://080-65602626')">080-65602626</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:enquiry@brigadeschools.org')">enquiry@brigadeschools.org</a>									/ <a class="blue-link" ng-click="goToLink('mailto:principal@brigadeschools.org')">principal@brigadeschools.org</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Buddhi International School</h2>
+							<div class="accor-content">
+								<p>
+									57, 3rd Main, 4th Cross, RMV 2nd Stage, H.I.G Colony
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-23518056')">080-23518056</a>/<a class="blue-link" ng-click="goToLink('tel://080-23518057')">080-23518057</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Sudarshan Vidya Mandir</h2>
+							<div class="accor-content">
+								<p>
+									1164,26th A Main, 4th T Block ,Jayanagar, Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Amara Soundarya Vidyalaya</h2>
+							<div class="accor-content">
+								<p>
+									505,”Satya”,4th Cross,3rd Block,2nd Stage,RMV Extension, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-65606965')">080-65606965</a>/<a class="blue-link" ng-click="goToLink('tel://080-23412999')">080-23412999</a>/
+									<a class="blue-link" ng-click="goToLink('tel://9945090350')">9945090350</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Asha Centre</h2>
+							<div class="accor-content">
+								<p>
+									1134, 2nd Floor, 100 Feet Road (Above Vivek's Showroom), Indiranagar, HAL 2nd Stage,Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-41808052')">080-41808052</a>/<a class="blue-link" ng-click="goToLink('tel://080-41808055')">080-41808055</a>/
+									<a class="blue-link" ng-click="goToLink('tel://080-41808071')">08-41808071</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:usha@ashafoundation.org')">usha@ashafoundation.org</a>
+									<a class="blue-link" ng-click="goToLink('mailto:shammy@ashafoundation.org')"></a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>ASHA – Academy of Severe Handicaps and Autism</h2>
+							<div class="accor-content">
+								<p>
+									L76/A, HBCS KirloskarColony,III Stage, IV BlockBasaveshwarnagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-23225279')">080-23225279</a>/<a class="blue-link" ng-click="goToLink('tel://080-23230357')">080-23230357</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:info@ashaforautism.com')">info@ashaforautism.com</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://www.ashaforautism.com/')">http://www.ashaforautism.com/</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>ASHA Centre for Dev. Disabilities</h2>
+							<div class="accor-content">
+								<p>
+									K & K Sub Area Cubbon Road, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25225500')">080-25225500</a>/<a class="blue-link" ng-click="goToLink('tel://080-25006994')">080-25006994</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Five Pediatric Therapy Centre
+							</h2>
+							<div class="accor-content">
+								<p>
+									No 45-46, Kodihalli Main Road, HAL 2nd Stage, Indira Nagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://94491 55000')">94491 55000</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://www.fiveindia.com/ ')">http://www.fiveindia.com/ </a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Five Pediatric Therapy Centre
+							</h2>
+							<div class="accor-content">
+								<p>
+									887, 22nd Main, 11th Cross, 2nd Phase J P Nagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://94492 55000')">94492 55000</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://www.fiveindia.com/ ')">http://www.fiveindia.com/ </a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Five Pediatric Therapy Centre
+							</h2>
+							<div class="accor-content">
+								<p>
+									449, 8th Cross, RMV 2nd Stage ( Dollars Colony), Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://94493 55000')">94493 55000</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://www.fiveindia.com/ ')">http://www.fiveindia.com/ </a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Daksh ABA and Autism services</h2>
+							<div class="accor-content">
+								<p>
+									Kinnari Bhatt 235, 3rd A Main, 4th Block 1st Stage, Near Hennur Road and Outer Ring Road Junction, HBR Layout, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://8065705615')">8065705615</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:dakshautism@gmail.com')">dakshautism@gmail.com</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>BMI Bangalore-Hrbr</h2>
+							<div class="accor-content">
+								<p>
+									407, 7th Main, 80 ft Road, HRBR Layout, Bangalore (Near HRBR cosmopolitan club)
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://918025453726')">918025453726</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:bmi.bangalorehrbr@behaviormomentum.com')">bmi.bangalorehrbr@behaviormomentum.com</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('behaviormomentum.com')">behaviormomentum.com</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>BMI Bangalore – Sarjapur</h2>
+							<div class="accor-content">
+								<p>
+									No.21, Asha’s Blooming Dales Layout, Kasavanahalli, Sharjapur Road,Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>BMI Bangalore-Jaynagar</h2>
+							<div class="accor-content">
+								<p>
+									1031F, 40th Cross, 4th T Block Jayanagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:bmi.bangalorehrbr@behaviormomentum.com')">bmi.bangalorehrbr@behaviormomentum.com</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('behaviormomentum.com')">behaviormomentum.com</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Asha Integrated School
+							</h2>
+							<div class="accor-content">
+								<p>
+									3282, 1st Floor, 12th Main, Indiranagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-41645939')">080-41645939</a> / <a class="blue-link" ng-click="goToLink('tel://9448069524')">9448069524</a>/
+									<a class="blue-link" ng-click="goToLink('tel://9845557935')">9845557935</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:poonam@ashais.org  shaheen@ashais.org')">poonam@ashais.org  shaheen@ashais.org</a>
+								</div>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('http://ashais.org ')">http://ashais.org </a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Stepping Stones Center</h2>
+							<div class="accor-content">
+								<p>
+									157, Karthik Nagar, Near Karthik Nagar Children’s Park Marathahalli Post, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Website: <a class="blue-link" ng-click="goToLink('www.steppingstonescenter.in')">www.steppingstonescenter.in</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Centre For Learning</h2>
+							<div class="accor-content">
+								<p>
+									462, 9th cross, 1st Block, Jayanagar Chennenahalli - Tavarekere Hobli, Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Poorna</h2>
+							<div class="accor-content">
+								<p>
+									Indira Vijayasimha 788 A Block, Sahakari nagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-23390289')">080-23438209</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Around the Child</h2>
+							<div class="accor-content">
+								<p>
+									Chandra Layout,Vijayanagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-23390289')">080-23390289</a>/ <a class="blue-link" ng-click="goToLink('tel://080-23391948')">080-23391948</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item expandable" ng-class="{expanded: activeItem == 2}">
+				<div class="title" expandable-dir ng-click="activeItem = activeItem == 2 ?0:2; scrollClicked(2)">
+					<i class="ion-android-add"></i>
+					<i class="ion-android-remove"></i>
+					<h2>Psychologists</h2>
+				</div>
+				<div class="content accor-content">
+					<div class="card">
+						<div class="item">
+							<h2>Parijma Neuro-diagnostic And Rehabilitation Centre</h2>
+							<div class="accor-content">
+								<p>Dr.Sulata Shenoy</p>
+								<p>
+									BTS Depot Road , Off Double Road, Wilson Garden, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-22238534')">080-22238534</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Educational Psychologist Brindavan Psycho-Educational Society</h2>
+							<div class="accor-content">
+								<p>Dr.Gayathri Krishna</p>
+								<p>
+									45, 9th A main road, 2nd Block, Jayanagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-26567311')">080-26567311</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Dept. of Psychology NIMHANS – National Institute of Mental Health and Neuro- Sciences</h2>
+							<div class="accor-content">
+								<p>Dr. Uma Hirasave</p>
+								<p>
+									Hosur Road, Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item expandable" ng-class="{expanded: activeItem == 3}">
+				<div class="title" expandable-dir ng-click="activeItem = activeItem == 3 ?0:3; scrollClicked(3)">
+					<i class="ion-android-add"></i>
+					<i class="ion-android-remove"></i>
+					<h2>Pediatricians</h2>
+				</div>
+				<div class="content accor-content">
+					<div class="card">
+						<div class="item">
+							<h2>Bangalore Children’s Hospital and Research Centre</h2>
+							<div class="accor-content">
+								<p>
+									Dr.Nandini Mundkur</p>
+								<p>
+									6, Chitrapur Complex, 8th Main, 15th Cross, Malleswaram, Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>KR Hospital
+							</h2>
+							<div class="accor-content">
+								<p>Dr. Ranjan Pejawar, Neurologist</p>
+								<p>
+									Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-26567311')">080-26567311</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Spastics society of Karnataka</h2>
+							<div class="accor-content">
+								<p>Dr. M S Mahadeviah</p>
+								<p>
+									31, 5th Cross, 5th Main, Indiranagar 1st Stage, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25280935')">080-25280935</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Parijma Neuro-diagnostic And Rehabilitation Centre
+							</h2>
+							<div class="accor-content">
+								<p>Dr.Suresh Aroor</p>
+								<p>
+									BTS Depot Road , Off Double Road, Wilson Garden, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-22238534')">080-22238534</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item expandable" ng-class="{expanded: activeItem == 4}">
+				<div class="title" expandable-dir ng-click="activeItem = activeItem == 4 ?0:4; scrollClicked(4)">
+					<i class="ion-android-add"></i>
+					<i class="ion-android-remove"></i>
+					<h2>Speech and Language Pathologists</h2>
+				</div>
+				<div class="content accor-content">
+					<div class="card">
+						<div class="item">
+							<h2>Spastics Society Of Karnataka</h2>
+							<div class="accor-content">
+								<p>
+									Ms.Preethi</p>
+								<p>
+									31, 5th Cross, 5th Main, Indiranagar 1st Stage, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25280935')">080-25280935</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Dr.S R Chandrasekhar Institute of Speech and hearing</h2>
+							<div class="accor-content">
+								<p>Dr. Madhuri Gore/ Dr B.S Premalatha</p>
+								<p>
+									Hennur Road,Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25470037')">080-25470037</a>/ <a class="blue-link" ng-click="goToLink('tel://080-25460405')">080-25460405</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>The Com-DEALL Trust </h2>
+							<div class="accor-content">
+								<p>Dr. Prathiba Karanth</p>
+								<p>
+									No.47, Hutchins Road, 2nd Cross, Sarvajna Nagar (Cookes Town), Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25800826')">080-25800826</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:info@communicationdeall.org')">info@communicationdeall.org</a>
+								</div>
+								<div>
+									Website <a class="blue-link" ng-click="goToLink('www.communicationdeall.org')">www.communicationdeall.org</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>NIMHANS – National Institute of Mental Health and Neuro- Sciences</h2>
+							<div class="accor-content">
+								<p>
+									Dr.N.Shivashankar
+								</p>
+								<p>
+									Head of Dept.Speech Pathology and Audiology, Hosur Road,Bangalore
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>NIMHANS – National Institute of Mental Health and Neuro- Sciences</h2>
+							<div class="accor-content">
+								<p>Dr.N.Shivashankar</p>
+								<p>
+									Head of Dept.Speech,Pathology and Audiology Hosur Road, Lakkasandra, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-2699 5001')">080-2699 5001</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Samvaad Speech and Language Rehabilitation Centre </h2>
+							<div class="accor-content">
+								<p>Ms Radhika Poovaiah</p>
+								<p>
+									80, 5th Main, Domlur Second Stage,Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25350960')">080-25350960</a> Ph: <a class="blue-link" ng-click="goToLink('tel://09980585774')">09980585774</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:consult@samvaadinstitute.org')">consult@samvaadinstitute.org</a>/
+									<a class="blue-link" ng-click="goToLink('mailto:admissions@samvaadinstitute.org')">admissions@samvaadinstitute.org</a>
+								</div>
+								<div>
+									Website <a class="blue-link" ng-click="goToLink('www.samvaadinstitute.org')">www.samvaadinstitute.org</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item expandable" ng-class="{expanded: activeItem == 5}">
+				<div class="title" expandable-dir ng-click="activeItem = activeItem == 5 ?0:5; scrollClicked(5)">
+					<i class="ion-android-add"></i>
+					<i class="ion-android-remove"></i>
+					<h2>Training Centres For Parents</h2>
+				</div>
+				<div class="content accor-content">
+					<div class="card">
+						<div class="item">
+							<h2>KPAMRC Association
+							</h2>
+							<div class="accor-content">
+								<p>
+									AMC Compound, Off Hosur Road Near Kidwai Hospital, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-26564608')">080-26564608</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Spastic Society of Karnataka Diagnostic and Research Centre
+							</h2>
+							<div class="accor-content">
+								<p>
+									31,5th Cross, 5th Main, Indiranagar 1st Stage, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25280935')">080-25280935</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Information and Resource Center
+							</h2>
+							<div class="accor-content">
+								<p>
+									9,1st Cross, Shankarapuram, Basavanagudi, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-41203426')">080-41203426</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Mothers Support Group
+							</h2>
+							<div class="accor-content">
+								<p>
+									60, Vittal Mallya Road, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-22213670')">080-22213670</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:autismsociety@gmail.com')">autismsociety@gmail.com</a>/
+									<a class="blue-link" ng-click="goToLink('mailto:vhmathias@yahoo.co.in')">vhmathias@yahoo.co.in</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item expandable" ng-class="{expanded: activeItem == 6}">
+				<div class="title" expandable-dir ng-click="activeItem = activeItem == 6 ?0:6; scrollClicked(6)">
+					<i class="ion-android-add"></i>
+					<i class="ion-android-remove"></i>
+					<h2>Occupational Therapists</h2>
+				</div>
+				<div class="content accor-content">
+					<div class="card">
+						<div class="item">
+							<h2>Premji Occupational</h2>
+							<div class="accor-content">
+								<p>
+									No.137/3,Ramaswamy Palya,Kammanahalli Main Road, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:occupationaltherapyblr@gmail.com')">occupationaltherapyblr@gmail.com</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Asha Medical Foundation</h2>
+							<div class="accor-content">
+								<p>
+									1134, 2nd Floor, Next to Food World, (Above Vivek’s Showroom), 100 Feet Road, HAL 2nd Stage, Indiranagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-4180 8004')">080-4180 8004</a> Ph: <a class="blue-link" ng-click="goToLink('tel://080-8076')">080-8076</a>									Ph: <a class="blue-link" ng-click="goToLink('tel://080-8051')">080-8051</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Manipal Hospital</h2>
+							<div class="accor-content">
+								<p>
+									Airport Road, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-2502 4444')">080-2502 4444</a> Ph: <a class="blue-link" ng-click="goToLink('tel://080-2502 3344')">080-2502 3344</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Ms. Shubhangi Dhuru</h2>
+							<div class="accor-content">
+								<p>
+									Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-25527085')">080-25527085</a> Ph: <a class="blue-link" ng-click="goToLink('tel://9900597551')">9900597551</a>
+								</div>
+								<div>
+									Email: <a class="blue-link" ng-click="goToLink('mailto:shubha4dhuru@yahoo.co.in')">shubha4dhuru@yahoo.co.in</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+					<div class="card">
+						<div class="item">
+							<h2>Apoorva Center for Autism</h2>
+							<div class="accor-content">
+								<p>
+									174, 2nd phase, JP nagar, Bangalore
+								</p>
+							</div>
+							<footer>
+								<div>
+									Ph: <a class="blue-link" ng-click="goToLink('tel://080-3351 2311')">080-3351 2311</a>
+								</div>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item expandable" ng-class="{expanded: activeItem == 7}">
+				<div class="title" expandable-dir ng-click="activeItem = activeItem == 7 ?0:7; scrollClicked(7)">
+					<i class="ion-android-add"></i>
+					<i class="ion-android-remove"></i>
+					<h2>Hospitals</h2>
+				</div>
+				<div class="content accor-content">
+					<div class="card">
+						<div class="item">
+							<div class="accor-content">
+								<p>
+									For a complete list of hospitals, please visit:
+									<a class="blue-link" ng-click="goToLink('https://www.practo.com/bangalore/treatment-for-autism')">https://www.practo.com/bangalore/treatment-for-autism</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>
